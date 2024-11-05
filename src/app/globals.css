@@ -149,6 +149,12 @@ h5 {
   text-align: left;font-weight: bolder;
 }
 
+.img-1, .img-2, .img-3, .img-4, .img-5 {
+  display: block;
+  margin: auto;
+  
+}
+
 @media (max-width: 768px) {
   body {
     padding: 0 10px; /* Adds padding for small screens */
@@ -216,8 +222,8 @@ h5 {
     margin-top: 20px;
   }
   .img-1, .img-2, .img-3, .img-4, .img-5 {
-    height: 200px; /* Increase height for mobile, adjust as needed */
-    width: auto; /* Maintain aspect ratio */
+    height: 200px; /* Adjust as needed */
+    width: auto;
   }
 
   .box1-1 {
