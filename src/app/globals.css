@@ -1,0 +1,308 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(217, 241, 241)
+}
+
+
+
+.box1{
+  height: 900px;
+  width: 650px;
+  text-align: center;
+  border: 1px black solid;
+  outline: 5px yellow solid;
+  padding: 20px;
+  margin: 50px 50px 10px 400px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: rgb(175, 242, 242) ;
+  box-shadow: 5px 15px 20px 5px;
+}
+.box1-1{
+  height: 1400px;
+  width: 650px;
+  text-align: center;
+  border: 1px black solid;
+  outline: 5px yellow solid;
+  padding: 20px;
+  margin: 50px 50px 10px 400px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: rgb(175, 242, 242) ;
+  box-shadow: 5px 15px 20px 5px;
+}
+
+.para1{
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: bolder;
+  color: rgb(3, 125, 3);
+  margin-left: 375px;
+  margin-top: 50px;
+  text-shadow: 4px 4px 16px green;
+}
+
+.para1-1 {
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: bolder;
+  color: rgb(3, 125, 3);
+  margin-left: 430px;
+  margin-top: 50px;
+  text-shadow: 4px 4px 16px green;
+}
+
+.para1-3, .para1-4, .para1-5 {
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: bolder;
+  color: rgb(3, 125, 3);
+  margin-left: 450px;
+  margin-top: 50px;
+  text-shadow: 4px 4px 16px green;
+}
+
+.para2{
+  font-size: 20px;
+  font-weight: bold;
+  width: 150px;
+  height: 15px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  color: green;
+  background-color: rgb(175, 242, 242) ;
+  text-shadow: 2px 2px 16px green;
+}
+
+.para3{
+  border-radius: 20px;
+  border: 1px green solid;
+  color: green;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.card{
+  height: 500px;
+  width:600px;
+  margin-top: 10px;
+  border: 3px solid rgb(211, 246, 211);
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0px 0px 10px 0px;
+  box-shadow: 0px 0px 10px 0px;
+}
+
+.btn1, .btn2, .btn3{
+  border-radius: 15px;
+  border: 1px green solid;
+  cursor: pointer;
+  color: green;
+  box-shadow: 0px 3px 7px 0px;
+  padding: 5px 15px 5px 15px;
+  text-shadow: 2px 2px 16px green;
+  
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 10px; /* Adjust gap as needed */
+  margin-left: 180px;
+}
+
+
+.para4{
+  text-transform: uppercase;
+  color: rgb(247, 72, 8);
+  margin-left: 1200px;
+  margin-top: 60px;
+  text-shadow: 2px 5px rgb(246, 165, 136);
+}
+
+h5 {
+  color: rgb(141, 138, 138);
+  margin-left: 645px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 25px;
+}
+
+.svc {
+  text-align: left;
+}
+.svc-1 {
+  text-align: left;font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px; /* Adds padding for small screens */
+  }
+
+  .box1 {
+    width: 100%; /* Full width for mobile */
+    height: auto; /* Adjust height based on content */
+    margin: 20px auto; /* Center on smaller screens */
+    padding: 15px;
+  }
+
+  .para1 {
+    font-size: 24px; /* Smaller font size */
+    margin-left: 0; /* Centered text */
+    margin-top: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .para2 {
+    font-size: 18px;
+    margin-left: 0;
+    text-align: center;
+    width: auto; /* Fit to content */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .para3 {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .para1-3, .para1-4, .para1-5 {
+    font-size: 24px; /* Reduce font size for mobile */
+    margin-left: 0; /* Remove left margin for centered text */
+    margin-top: 20px; /* Adjust top margin for smaller screens */
+    text-align: center; /* Center-align text on mobile */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .card {
+    width: 100%; /* Adjust image to fit container width */
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .buttonContainer {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically on mobile */
+    align-items: center; /* Center buttons */
+    gap: 10px;
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .btn1, .btn2, .btn3 {
+    padding: 10px 20px; /* Increase padding for touch screens */
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .para4 {
+    margin-left: 0;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .img-1, .img-2, .img-3, .img-4, .img-5 {
+    height: 200px; /* Increase height for mobile, adjust as needed */
+    width: auto; /* Maintain aspect ratio */
+  }
+
+  .box1-1 {
+    width: 100%; /* Reduce width to fit mobile screens */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 15px;
+    margin: 20px auto; /* Centered with smaller margin */
+    box-shadow: 3px 8px 12px 3px;
+    
+  }
+
+  .para1-1 {
+    font-size: 24px; /* Smaller font size for mobile */
+    margin: 20px 0 10px 0; /* Reduce margins for mobile */
+    text-align: center;
+  }
+  h5 {
+    color: rgb(174, 172, 172);
+    margin-left: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+
+/* Base Styles */
+.custom-body {
+  background-color: #d1fae5; /* bg-green-100 */
+  color: black;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #16a34a; /* bg-green-600 */
+  color: white;
+  padding: 16px; /* p-4 */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: bold;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+  display: flex;
+  gap: 16px; /* space-x-8 */
+  font-weight: bold;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  padding: 24px; /* p-6 */
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .header {
+    padding: 12px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 1.75rem; /* Smaller font for mobile */
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+  }
+}
