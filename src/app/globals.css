@@ -23,20 +23,9 @@ body {
 
 
 
+
 .box1{
-  height: 900px;
-  width: 650px;
-  text-align: center;
-  border: 1px black solid;
-  outline: 5px yellow solid;
-  padding: 20px;
-  margin: 50px 50px 10px 400px;
-  border-radius: 20px 20px 20px 20px;
-  background-color: rgb(175, 242, 242) ;
-  box-shadow: 5px 15px 20px 5px;
-}
-.box1-1{
-  height: 1400px;
+  height: auto;
   width: 650px;
   text-align: center;
   border: 1px black solid;
@@ -96,6 +85,7 @@ body {
   color: green;
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
 }
 
 
@@ -257,10 +247,10 @@ h5 {
   padding: 0;
 }
 
-.header {
-  background-color: #16a34a; /* bg-green-600 */
+header {
+  background-color: #16a34a;
   color: white;
-  padding: 16px; /* p-4 */
+  padding: 20px 150px 20px 50px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -269,7 +259,7 @@ h5 {
 }
 
 .title {
-  font-size: 2.25rem; /* text-4xl */
+  font-size: 2.5rem; /* text-4xl */
   font-weight: bold;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -291,24 +281,47 @@ h5 {
 }
 
 .main-content {
-  padding: 24px; /* p-6 */
+  padding: 32px;
+}
+
+.hamburger {
+  display: none; /* Hide by default */
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.hamburger-line {
+  width: 24px;
+  height: 2px;
+  background-color: white;
 }
 
 /* Responsive Styles for Mobile */
 @media (max-width: 768px) {
   .header {
-    padding: 12px;
     flex-direction: column;
-    text-align: center;
+    padding-left: 50px;
   }
 
-  .title {
-    font-size: 1.75rem; /* Smaller font for mobile */
+  .hamburger {
+    display: flex;
+    
   }
 
   .nav {
+    display: none;
     flex-direction: column;
-    gap: 8px;
-    margin-top: 8px;
+    gap: 12px;
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  .nav.nav-open {
+    display: flex; /* Show navigation links when menu is open */
+  }
+  .nav-link {
+    white-space: nowrap; /* Ensure each link appears on one line */
+    padding: 8px 0; /* Optional: Add vertical padding for spacing */
   }
 }

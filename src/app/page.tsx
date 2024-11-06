@@ -5,7 +5,7 @@ export default function Page() {
   return (
     <main>
       <h1 className="para1-1">Tourism of Wonderful lakes</h1>
-      <div className="box1-1">
+      <div className="box1">
         <Image className="card" src="/lake1.png" alt="Tourism" width={600} height={500} />
         <br />
         <div>
